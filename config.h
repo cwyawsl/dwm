@@ -5,7 +5,7 @@
 /* appearance */
 
 /* 窗口边框像素 */
-static const unsigned int borderpx  = 1;        
+static const unsigned int borderpx  = 2;        
 
 /* 捕捉像素 */
 static const unsigned int snap      = 100;       
@@ -61,20 +61,20 @@ static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=10" };
 static const int showlayout         = 1;
 
 /* 是否在状态栏显示客户端 */ 
-static const int showclient         = 1;
+static const int showclient         = 0;
 
-/*static const char norm_fg_color[]     = "#0E0E0E"; */
-static const char norm_fg_color[]     = "#0E0E0E"; /*这一行指的是xsetroot得到的状态栏文字颜色*/
+/*static const char norm_fg_color[]     = "#f0fcff"; */
+static const char norm_fg_color[]     = "#f0fcff"; /*这一行指的是xsetroot得到的状态栏文字颜色*/
 /*static const char norm_bg_color[]     = "#282a36"; */
-static const char norm_bg_color[]     = "#FFC09F"; /*这一行指的是状态栏背景颜色*/
+static const char norm_bg_color[]     = "#312520"; /*这一行指的是状态栏背景颜色*/
 /*static const char norm_border_color[] = "#282a36"; */
-static const char norm_border_color[] = "#FFC09F"; 
-static const char sel_fg_color[]      = "#0E0E0E"; 
-static const char sel_bg_color[]      = "#FFC09F"; 
-static const char sel_border_color[]  = "#FFC09F"; 
-static const char hid_fg_color[]      = "#0E0E0E"; 
-static const char hid_bg_color[]      = "#FFC09F"; 
-static const char hid_border_color[]  = "#FFC09F"; 
+static const char norm_border_color[] = "#312520"; 
+static const char sel_fg_color[]      = "#f0fcff"; 
+static const char sel_bg_color[]      = "#312520"; 
+static const char sel_border_color[]  = "#312520"; 
+static const char hid_fg_color[]      = "#f0fcff"; 
+static const char hid_bg_color[]      = "#312520"; 
+static const char hid_border_color[]  = "#312520"; 
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
