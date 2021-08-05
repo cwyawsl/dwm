@@ -55,10 +55,10 @@ static const int topbar             = 1;
 static const Bool viewontag         = True;     
 
 /* 字体列表 */
-static const char *fonts[]          = { "SauceCodePro Nerd Font Mono:size=10" };
+static const char *fonts[]          = { "Noto Sans Devanagari Black:size=14" };
 
 /* 是否显示状态栏窗口管理方式 */
-static const int showlayout         = 1;
+static const int showlayout         = 0; 
 
 /* 是否在状态栏显示客户端 */ 
 static const int showclient         = 0;
@@ -168,11 +168,11 @@ static Key keys[] = {
 	{ MODKEY,              XK_n,                    spawn,          {.v = rofi } },
 	{ MODKEY,              XK_c,                    spawn,          {.v = browsercmd } },
 	{ MODKEY|ShiftMask,    XK_c,                    spawn,          {.v = edge } },          
-	{ MODKEY,              XK_Down,                 spawn,          {.v = downvol } },
-	{ MODKEY|ControlMask,  XK_j,                    spawn,          {.v = mutevol } },
-	{ MODKEY,              XK_Up,                   spawn,          {.v = upvol   } },
-	{ MODKEY|ShiftMask,    XK_Up,                   spawn,          {.v = changelightupcmd } },
-	{ MODKEY|ShiftMask,    XK_Down,                 spawn,          {.v = changelightdowncmd } },
+	{ MODKEY,              XK_F11,                  spawn,          {.v = downvol } },
+	{ MODKEY|ControlMask,  XK_F10,                  spawn,          {.v = mutevol } },
+	{ MODKEY,              XK_F12,                  spawn,          {.v = upvol   } },
+	{ MODKEY|ShiftMask,    XK_F6,                   spawn,          {.v = changelightupcmd } },
+	{ MODKEY|ShiftMask,    XK_F5,                   spawn,          {.v = changelightdowncmd } },
 	{ MODKEY,              XK_b,                    spawn,          {.v = wpcmd } },
 	{ 0,                   XK_Print,                spawn,          {.v = screenshotcmd } },
 	{ MODKEY,              XK_grave,                togglescratch,  {.v = scratchpadcmd } },
