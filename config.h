@@ -197,6 +197,12 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,    XK_q,                    killclient,     {0} },
 	{ MODKEY|ShiftMask,    XK_f,                    fullscreen,     {0} },
 	{ MODKEY,              XK_apostrophe,           togglescratch,  {.v = scratchpadcmd } },
+	{ MODKEY,              XK_comma,                focusmon,       {.i = -1 } },
+	{ MODKEY,              XK_period,               focusmon,       {.i = +1 } },
+	{ MODKEY|ShiftMask,    XK_comma,                tagmon,         {.i = -1 } },
+	{ MODKEY|ShiftMask,    XK_period,               tagmon,         {.i = +1 } },
+	{ MODKEY,              XK_0,                    view,           {.ui = ~0 } },
+	{ MODKEY|ShiftMask,    XK_0,                    tag,            {.ui = ~0 } },
 	{ MODKEY|ShiftMask,    XK_n,                    togglealttag,   {0} },
 	TAGKEYS(               XK_1,                      0)
 	TAGKEYS(               XK_2,                      1)
